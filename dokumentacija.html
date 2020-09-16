@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dokumentacija</title>
+</head>
+<body>
+    <div class="mainGrid">
+        <div class="mainHeader">
+            <img src="./multimedija/logo.png" alt="Logo" class="logoImg">
+            <h1 class="headerNaslov">
+                TransferHUB
+            </h1>
+        </div>
+        <div class="navBox">
+            <ul class="navList">
+                <li class="navElement"><a href="./index.php" class="navLink">Početna</a></li>
+            </ul>
+        </div>
+        <div class="wideContent">
+            <h2>Opis projektnog zadatka</h2>
+            <p>Projektni zadatak tražio je da se osmisli i implementira sustav za upravljanje kupovinom i prodajom igrača u klubovima. Sustav treba implementirati uloge neregistriranog korisnika, registriranog korisnika / Igrača, moderatora / Vlasnika kluba i administratora</p>
+        
+            <h2>Opis projektnog rješenja</h2>
+            <p>Projektno rješenje implementirano je pomoću HTML-a, CSS-a, Javascript-a i JQuery-a na korisničkoj strani te PHP-a, Smarty-a i MySQL-a na strani servera. Sustav omogućuje neregistriranom korisniku pregled klubova i galerije, registrirani korisnika
+                može nakon aktivacije računa kreirati svoj profil te vidjeti svoje transfere ili zatražiti napuštanje kluba ako pripada nekom. Moderator može upravljati klubovima kojim je dodjeljen te vidjeti popis zahtjeva za transferom u klubu. Administrator može kreirati kategorije
+                sportova, nove klubove, te odobravati zahtjeve igrača za napuštanjem klubova.
+            </p>
+            <div class="transferContainer">
+                <h2 class="naslov">ERA model</h2>
+            </div>
+            <div>
+                <img src="./multimedija/ERA.png" alt="ERA model">
+            </div>
+            <div class="transferContainer">
+                <h2>Navigacijski dijagrami</h2>
+            </div>
+            <div class="transferContainer">
+                <h3>Neregistrirani korisnik</h3>
+            </div>
+            <img src="./multimedija/nereg.png" alt="Navigacijski dijagram">
+            <div class="transferContainer">
+                <h3>Registrirani korisnik</h3>
+            </div>
+            <img src="./multimedija/reg.png" alt="Navigacijski dijagram">
+            <div class="transferContainer">
+                <h3>Moderator</h3>
+            </div>
+            <img src="./multimedija/mod.png" alt="Navigacijski dijagram">
+            <div class="transferContainer">
+                <h3>Administrator</h3>
+            </div>
+            <img src="./multimedija/admin.png" alt="Navigacijski dijagram">
+
+            <h2>Korišteni alati i tehnologije</h2>
+            <div class="transferContainer">
+                <ul>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Jquery</li>
+                    <li>PHP</li>
+                    <li>Smarty</li>
+                    <li>MySql</li>
+                    <li>phpMyAdmin</li>
+                    <li>XAMPP</li>
+                </ul>
+            </div>
+            <h2>Korišteni alati i tehnologije</h2>
+            <div class="transferContainer">
+                <ul>
+                    <li>Klasa baza.class.php za povezivanje s bazom</li>
+                    <li>Klasa sesija.class.php za kreiranje i upravljanje sesijom</li>
+                    <li>Smarty biblioteka za predloške</li>
+                    <li>Generacija CAPTCH-e - modificiran kod skinut s <a href="https://codepen.io/htejera/pen/PowdYbP">codepen stranice</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainFooter">
+            <p><strong>&copy; Hrvoje Vujasinović 2020</strong></p>
+        </div>
+    </div>
+</body>
+</html>

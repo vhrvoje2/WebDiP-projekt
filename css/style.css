@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.projektNaslov {
+    text-shadow: 0 0 10px rgba(180, 0, 0, 0.3), 0 0 10px rgba(180, 0, 0, 0.3), 0 0 10px rgba(180, 0, 0, 0.3), 0 0 10px rgba(180, 0, 0, 0.3); 
+    color: white;
+    font-size: 85px;
+    margin: 300px auto 300px auto;
+}
+
+.greskeDiv {
+    text-align: center;
+    margin: 0;
+}
+
+.greske {
+    color: red;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+/* HEADER ------------------------------------------------------*/
+.mainHeader {
+    grid-column: 1 /span 3;
+    grid-row: 1 /span 1;
+    text-align: center;
+    height: 80px;
+
+    background-color: rgba(180, 0, 0, 0.8);
+    border-bottom: 1px solid black;
+    font-weight: bolder;
+}
+
+.logoImg {
+    height: 60px;
+    margin: 10px auto auto 40px;
+    float: left;
+}
+
+.headerNaslov {
+    float: left;
+    margin-left: 20px;
+}
+
+/* NAVIGACIJA */
+.navBox {
+    grid-column: 1 /span 3;
+    grid-row: 2 /span 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: rgba(180, 0, 0, 0.8);
+    border-bottom: 1px solid black;
+}
+
+.navList {
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navElement {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline;
+    padding: 10px;
+}
+
+.navElement:hover {
+    background-color: #ffffff;
+    color: rgba(180, 0, 0, 0.8);
+}
+
+.navLink {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* SIDENAV ------------------------------------------------------*/
+.sideBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-column: 1 /span 1;
+    grid-row: 3 /span 3;
+}
+
+.sideList {
+    padding: 0;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sideElement {
+    padding: 10px;
+}
+
+/* FOOTER ------------------------------------------------------*/
+.mainFooter {
+    grid-column: 1 /span 3;
+    grid-row: 6 /span 1;
+    text-align: center;
+    height: 80px;
+
+    background-color: rgba(180, 0, 0, 0.8);
+    border-top: 1px solid black;
+    line-height: 40px;
+}
+
+/* CONTENT ------------------------------------------------------*/
+.autorSlika {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 15px;
+    max-width: 280px;
+    height: 100%;
+}
+
+.autorInfo {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+}
+
+.autorPodaci {
+    text-transform: uppercase;
+    color: rgba(180, 0, 0, 0.8);
+}
+
+.autorPodaci:hover {
+    color: rgba(180, 0, 0, 1);
+    cursor: default;
+}
+
+.mail {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mail:hover {
+    color: rgba(180, 0, 0, 1);
+    border-bottom: 2px solid;
+}
+
+.content{
+    grid-column: 2 /span 2;
+    grid-row: 3 /span 3;
+
+    border-left: 1px solid black;
+}
+
+.wideContent {
+    grid-column: 1 /span 3;
+    grid-row: 3 /span 3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* FORMA ------------------------------------------------------*/
+input {
+    padding: 20px;
+    margin: 20px 50px 20px 50px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgba(180, 0, 0, 0.8);
+}
+
+input[type=checkbox]{
+    margin: 3px 10px 0 0;
+    width: 15px;
+    height: 15px;
+}
+
+.gumbDiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.formGumb {
+    width: 70%;
+    background-color: rgba(180, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.registracijaBox {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.prijavaBox {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.captchaDiv {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* TABLICA ------------------------------------------------------*/
+.tablicaDiv {
+    margin: 3% auto 3% auto;
+    min-width: 600px;
+}
+
+table {
+    max-width: 100%;
+    border-style: solid;
+    border-color: rgba(180, 0, 0, 0.8);
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    margin-bottom: 5px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.tablicaZaglavlje {
+    background-color: rgba(180, 0, 0, 0.6);
+}
+
+.tablicaHeader {
+    padding: 8px;
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.tablicaRed {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.tablicaData {
+    padding: 15px;
+    font-size: 14px;
+    background-color: rgba(180, 0, 0, 0.3);
+}
+
+.tablicaLink {
+    padding: 15px;
+    font-size: 14px;
+    background-color: rgba(180, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tablicaLink:hover {
+    background-color: rgba(180, 0, 0, 0.6);
+}
+
+/* GALERIJA ------------------------------------------------------*/
+.galerija {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.galerijaCard {
+    width: 200px;
+    border: 2px solid darkred;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 5px 5px 10px 5px #888888;
+}
+
+.galerijaCard:hover {
+    box-shadow: 10px 10px 20px 10px #888888;
+}
+
+.cardImg {
+    border-radius: 18px 18px 0 0px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.cardImage {
+    border-radius: 18px 18px 0 0px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardName {
+    text-align: center;
+}
+
+.search {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+select {
+    padding: 5px;
+}
+
+select:last-of-type {
+    margin-top: 10px;
+}
+
+#pojam {
+    min-width: 65%;
+}
+
+/* PROFIL ------------------------------------------------------*/
+.playerContainer {
+    width: 100%;
+}
+
+.playerCard {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto 50px auto;
+    border: 2px solid rgba(180, 0, 0, 0.8);
+    border-radius: 0 15px 0 15px;
+}
+
+.playerCard:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+.playerImgDiv {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    text-align: center;
+}
+
+.playerImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.playerInfoDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.playerInfoBox:first-of-type {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.playerInfo {
+    color: rgba(180, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.profilHeader {
+    width: 100%;
+    text-align: center;
+}
+
+.profilBox {
+    margin-bottom: 50px;
+}
+
+.transferContainer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.transferContainer:last-of-type {
+    margin-bottom: 50px;
+}
+
+.transferi {
+    width: 50%;
+}
+
+.logoKluba {
+    width: 50px;
+    height: 50px;
+}
+
+/* MODERACIJA ------------------------------------------------------*/
+.moderacija {
+    margin-top: 50px;
+}
+
+/* ADMIN ------------------------------------------------------*/
+textarea {
+    resize: none;
+  }
+
+.naslov {
+    display: block;
+}
